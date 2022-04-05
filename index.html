@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<style>
+		.green{
+			position: absolute; 
+			height: 40px; 
+			left: 990px; 
+			top: 790px;
+		}
+		.red{
+			position: absolute; 
+			height: 40px; 
+			left: 700px; 
+			top: 600px;
+		}
+		.jdun{
+			position: absolute; 
+			height: 40px;
+			left: 1730px; 
+			top: 450px;
+		}
+		.box{
+			height: 400px;
+			width: 300px;
+			background-color: orange;
+		}
+		.green1{
+			position: absolute; 
+			height: 40px; 
+			top: 250px;
+		}
+		.red1{
+			position: absolute; 
+			height: 40px; 
+			top: 200px;
+		}
+		.jdun1{
+			position: absolute; 
+			height: 40px;	
+			top: 150px;
+		}
+	</style>
+	<div style="background-image: url(The_Skeld.jpg); height: 1080px; background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+		<div class="box">
+			<h1>Очки:
+				<span class="point">
+					0
+				</span> 
+			</h1>
+			<h1>Найди:</h1>
+			<img src="green.png" class="green1">
+			<img src="Red_Dead_Body.png" class="red1">
+			<img src="Jdun.png" class="jdun1">
+		</div>
+		<img src="green.png" class="green">
+		<img src="Red_Dead_Body.png" class="red">
+		<img src="Jdun.png" class="jdun">
+	</div>
+
+	<script>
+		let gre = document.querySelector(".green")
+		let red = document.querySelector(".red")
+		let jdu =  document.querySelector(".jdun")
+		let poi = document.querySelector(".point")
+		let points = 0
+
+		gre.onclick = function(){
+			gre.style.display = "none"
+			points = points + 1
+			poi.innerHTML = points
+			if (points == 3) {
+				alert("Победа!")
+			}
+		}
+		red.onclick = function(){
+			red.style.display = "none"
+			points = points + 1
+			poi.innerHTML = points
+			if (points == 3) {
+				alert("Победа!")
+			}
+		}
+		jdu.onclick = function(){
+			jdu.style.display = "none"
+			points = points + 1
+			poi.innerHTML = points
+			if (points == 3) {
+				alert("Победа!")
+			}
+		}
+	</script>
+</body>
+</html>
